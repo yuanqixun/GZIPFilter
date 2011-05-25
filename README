@@ -1,0 +1,15 @@
+This project is a GZIPFilter project. The project could compress all non-compressed web file, etc. ext-all.js or ext-all.css
+just add a filter like this:
+<filter>
+		<filter-name>GZIPFilter</filter-name>
+		<filter-class>com.jspbook.GZIPFilter</filter-class>
+</filter>
+....
+
+	<filter-mapping>
+		<filter-name>GZIPFilter</filter-name>
+		<url-pattern>*.js</url-pattern>
+	</filter-mapping>
+	
+	That's ok, and you can see the firebug's output.
+	Please try it yourself.
